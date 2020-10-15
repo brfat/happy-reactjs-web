@@ -1,12 +1,21 @@
 import React from 'react';
 
+interface TitleProps {
+  text: string;
+}
+ 
+
+function Title(props: TitleProps) {
+  return (
+    <h1>{props.text}</h1>
+  )
+}
+
 
 function App() {
   return (
     <div className="App">
-     
-     <h3>FAT no React com Typescript!</h3>
-     <h2>Testandoo</h2>
+     <Title text="Titulo 1" />
     </div>
   );
 }
